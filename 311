@@ -1,1 +1,35 @@
-MERHABA
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Örnek Hikaye</title>
+</head>
+<body>
+    <nav>
+        <a href="#bolum1">Bölüm 1</a> |
+        <a href="#bolum2">Bölüm 2</a> |
+        <a href="#bolum3">Bölüm 3</a> |
+        <a href="#bolum4">Bölüm 4</a>
+    </nav>
+    <section id="bolum1">
+        <h1>Bölüm 1</h1>
+        <p>Bu bir hikaye...</p>
+        <img src="img/bolum1.jpg" alt="Bölüm 1 Resmi">
+    </section>
+    <section id="bolum2">
+        <h1>Bölüm 2</h1>
+        <p>Bu bir hikaye...</p>
+        <img src="img/bolum2.jpg" alt="Bölüm 2 Resmi">
+    </section>
+    <section id="bolum3">
+        <h1>Bölüm 3</h1>
+        <p>Bu bir hikaye...</p>
+        <img src="img/bolum3.jpg" alt="Bölüm 3 Resmi">
+    </section>
+    <section id="bolum4">
+        <h1>Bölüm 4</h1>
+        <p>Bu bir hikaye...</p>
+        <img src="img/bolum4.jpg" alt="Bölüm 4 Resmi">
+    </section>
+</body>
+</html>
+
