@@ -1,0 +1,44 @@
+table {
+  width: 100%;
+  border: 1px solid black;
+}
+th {
+  border: 1px solid black;
+  background-color: #f2f2f2;
+}
+td {
+  border: 1px solid black;
+}
+td.BTE307 {
+  background-color: #ff99cc;
+}
+td.BTE113 {
+  background-color: #9b99ff;
+}
+td.BTE311 {
+  background-color: #99fff1;
+}
+td.BTE219 {
+  background-color: #fff099;
+}
+td.BTE309 {
+  background-color: #caff99;
+}
+td.BTE307LAB {
+  background-color: #ffca99;
+}
+td.EGT350 {
+  background-color: #ffc299;
+}
+td.BTE419 {
+  background-color: #e9ff99;
+}
+td.BTE427 {
+  background-color: #99ffcf;
+}
+td.EGT303 {
+  background-color: #fa77fa;
+}
+td.EGT304 {
+  background-color: #144f8a;
+}

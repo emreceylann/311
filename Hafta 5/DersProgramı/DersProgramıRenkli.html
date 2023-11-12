@@ -1,0 +1,268 @@
+
+<h2 center>Inline CSS ile Tablo</h2>
+<table style="width:100%; border: 1px solid black;">
+    <tr>
+      <th style="border: 1px solid black; background-color: #f2f2f2;">Pazartesi</th>
+      <th style="border: 1px solid black; background-color: #f2f2f2;">Salı</th>
+      <th style="border: 1px solid black; background-color: #f2f2f2;">Çarşamba</th>
+      <th style="border: 1px solid black; background-color: #f2f2f2;">Perşembe</th>
+      <th style="border: 1px solid black; background-color: #f2f2f2;">Cuma</th>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; background-color: #ff9999;">BTE 307</td>
+      <td style="border: 1px solid black; background-color: #ff9999;">BTE 113</td>
+      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black; background-color: #ff9999;">BTE 311</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; background-color: #ff9999;">BTE 307</td>
+      <td style="border: 1px solid black; background-color: #ff9999;">BTE 113</td>
+      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black; background-color: #ffcc99;">BTE 219</td>
+      <td style="border: 1px solid black; background-color: #ff9999;">BTE 311</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black; background-color: #99ccff;">BTE 309</td>
+      <td style="border: 1px solid black; background-color: #ffcc99;">BTE 219</td>
+      <td style="border: 1px solid black; background-color: #ff9999;">BTE 311</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black; background-color: #99ccff;">BTE 309</td>
+      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black;"></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; background-color: #ff9999;">BTE 307 LAB</td>
+      <td style="border: 1px solid black; background-color: #ccff99;">EGT 350</td>
+      <td style="border: 1px solid black; background-color: #ffcc99;">BTE 419</td>
+      <td style="border: 1px solid black; background-color: #99ccff;">BTE 427</td>
+      <td style="border: 1px solid black; background-color: #ccff99;">EGT 303</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; background-color: #ff9999;">BTE 307 LAB</td>
+      <td style="border: 1px solid black; background-color: #ccff99;">EGT 350</td>
+      <td style="border: 1px solid black; background-color: #ffcc99;">BTE 419</td>
+      <td style="border: 1px solid black; background-color: #99ccff;">BTE 427</td>
+      <td style="border: 1px solid black; background-color: #ccff99;">EGT 303</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black; background-color: #ccff99;">EGT 304</td>
+      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black;"></td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black; background-color: #ccff99;">EGT 304</td>
+      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black;"></td>
+      <td style="border: 1px solid black;"></td>
+    </tr>
+  </table>
+  
+  <h2>Internal CSS</h2>
+
+  <!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  width: 100%;
+  border: 1px solid black;
+}
+th {
+  border: 1px solid black;
+  background-color: #f2f2f2;
+}
+td {
+  border: 1px solid black;
+}
+td.BTE307 {
+  background-color: #7c2424;
+}
+td.BTE113 {
+  background-color: #608683;
+}
+td.BTE311 {
+  background-color: #ff99d4;
+}
+td.BTE219 {
+  background-color: #ffcc99;
+}
+td.BTE309 {
+  background-color: #3e7dbd;
+}
+td.BTE307LAB {
+  background-color: #d8b9b9;
+}
+td.EGT350 {
+  background-color: #77c52a;
+}
+td.BTE419 {
+  background-color: #b6ff99;
+}
+td.BTE427 {
+  background-color: rgb(253, 255, 153)
+}
+td.EGT303 {
+  background-color: #99ffe0;
+}
+td.EGT304 {
+  background-color: #498a07;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Pazartesi</th>
+    <th>Salı</th>
+    <th>Çarşamba</th>
+    <th>Perşembe</th>
+    <th>Cuma</th>
+  </tr>
+  <tr>
+    <td class="BTE307">BTE 307</td>
+    <td class="BTE113">BTE 113</td>
+    <td></td>
+    <td></td>
+    <td class="BTE311">BTE 311</td>
+  </tr>
+  <tr>
+    <td class="BTE307">BTE 307</td>
+    <td class="BTE113">BTE 113</td>
+    <td></td>
+    <td class="BTE219">BTE 219</td>
+    <td class="BTE311">BTE 311</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td class="BTE309">BTE 309</td>
+    <td class="BTE219">BTE 219</td>
+    <td class="BTE311">BTE 311</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td class="BTE309">BTE 309</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="BTE307LAB">BTE 307 LAB</td>
+    <td class="EGT350">EGT 350</td>
+    <td class="BTE419">BTE 419</td>
+    <td class="BTE427">BTE 427</td>
+    <td class="EGT303">EGT 303</td>
+  </tr>
+  <tr>
+    <td class="BTE307LAB">BTE 307 LAB</td>
+    <td class="EGT350">EGT 350</td>
+    <td class="BTE419">BTE 419</td>
+    <td class="BTE427">BTE 427</td>
+    <td class="EGT303">EGT 303</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="EGT304">EGT 304</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="EGT304">EGT 304</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+<h2>External CSS ile Tablo</h2>
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Pazartesi</th>
+    <th>Salı</th>
+    <th>Çarşamba</th>
+    <th>Perşembe</th>
+    <th>Cuma</th>
+  </tr>
+  <tr>
+    <td class="BTE307">BTE 307</td>
+    <td class="BTE113">BTE 113</td>
+    <td></td>
+    <td></td>
+    <td class="BTE311">BTE 311</td>
+  </tr>
+  <tr>
+    <td class="BTE307">BTE 307</td>
+    <td class="BTE113">BTE 113</td>
+    <td></td>
+    <td class="BTE219">BTE 219</td>
+    <td class="BTE311">BTE 311</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td class="BTE309">BTE 309</td>
+    <td class="BTE219">BTE 219</td>
+    <td class="BTE311">BTE 311</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td class="BTE309">BTE 309</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="BTE307LAB">BTE 307 LAB</td>
+    <td class="EGT350">EGT 350</td>
+    <td class="BTE419">BTE 419</td>
+    <td class="BTE427">BTE 427</td>
+    <td class="EGT303">EGT 303</td>
+  </tr>
+  <tr>
+    <td class="BTE307LAB">BTE 307 LAB</td>
+    <td class="EGT350">EGT 350</td>
+    <td class="BTE419">BTE 419</td>
+    <td class="BTE427">BTE 427</td>
+    <td class="EGT303">EGT 303</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="EGT304">EGT 304</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="EGT304">EGT 304</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+</body>
+</html>
