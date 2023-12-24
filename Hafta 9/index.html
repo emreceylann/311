@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rastgele Resim</title>
+    <style>
+        body {
+            background-image: url('images/1.jpg');
+            background-size: cover;
+        }
+
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+        }
+
+        #images img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="changeBg">Arka Planı Değiştir</button>
+    <div id="images">
+        <img id="img1" src="images/1.jpg">
+        <img id="img2" src="images/2.jpg">
+        <img id="img3" src="images/3.jpg">
+    </div>
+    <button id="toggleImages">Resimleri Göster/Gizle</button>
+
+    <script>
+        document.getElementById('changeBg').addEventListener('click', function () {
+            var randomImageNumber = Math.floor(Math.random() * 10) + 1;
+            document.body.style.backgroundImage = 'url(images/' + randomImageNumber + '.jpg)';
+        });
+
+        document.getElementById('toggleImages').addEventListener('click', function () {
+            var images = document.getElementById('images').children;
+            for (var i = 0; i < images.length; i++) {
+                if (images[i].style.display === 'none') {
+                    images[i].style.display = 'block';
+                } else {
+                    images[i].style.display = 'none';
+                }
+            }
+        });
+        window.onload = function () {
+            var randomImageNumber = Math.floor(Math.random() * 10) + 1;
+            document.body.style.backgroundImage = 'url(images/' + randomImageNumber + '.jpg)';
+        };
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .square {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin: 3px;
+            border: 4px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grid"></div>
+
+    <script>
+        var grid = document.getElementById('grid');
+        var count = 0;
+
+        for (var i = 0; i < 10; i++) {
+            for (var j = 0; j < 10; j++) {
+                var square = document.createElement('div');
+                square.className = 'square';
+                square.style.borderColor = 'rgb(' + Math.floor(255 - 2.55 * count) + ', ' + Math.floor(2.55 * count) + ', 0)';
+                grid.appendChild(square);
+                count++;
+            }
+            grid.appendChild(document.createElement('br'));
+        }
+    </script>
+</body>
+
+</html>
